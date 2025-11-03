@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        double sum = 0;
+        double ave = 0 ;
+        int iCount=0;
+
+        for (int i = 1; i <=100 ; i++) {
+            double a = kb.nextDouble();
+            sum +=a;
+            if (a<60){
+                System.out.println(a);
+                iCount++;
+            }
+        }
+        ave =sum/100;
+        System.out.println(ave+"  "+iCount);
+    }
+}
+详情可见class2025113
+main1
