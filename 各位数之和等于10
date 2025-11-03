@@ -1,0 +1,17 @@
+public class ptawork1 {
+    public static void main(String[]args){
+        for (int i=1000;i<=9999;i++){
+            if (i%10!=0 && (i%100)/10!=0 && (i%1000)/100!=0 && i/1000!=0){
+                int a,b,c,d;
+                a=i%10;
+                b=(i%100)/10;
+                c=(i%1000)/100;
+                d=i/1000;
+                if(a+b+c+d==10){
+                    System.out.printf("%d ",i);
+                }
+            }
+        }
+    }
+}
+1234是一个非常特殊的四位数，因为它的各位数之和为10，编程求所有这样的四位正整数，并要求这四个位数中没有0。 
